@@ -1,9 +1,6 @@
 import seaborn as sns
 import pandas as pd 
 
-data = dataset.pivot_table(index='month', columns='year', values='passengers' )
-sns.heatmap(data, linecolor='blue', linewidth=1)
-
 data = [[0.95, 0.95,'A'], [0.87,0.95,'B'], [0.94,0.99,'C']] 
 df = pd.DataFrame(data, columns = ['Senitivity', 'Specificity','Class']) 
 data = df.pivot_table(index='Senitivity', columns='Specificity', values='Class')
